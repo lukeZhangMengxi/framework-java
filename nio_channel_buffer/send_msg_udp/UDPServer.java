@@ -1,4 +1,4 @@
-package java_nio.send_msg_udp;
+package nio_channel_buffer.send_msg_udp;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -8,7 +8,7 @@ import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.util.Iterator;
 
-import java_nio.NioSendMsgConfig;
+import nio_channel_buffer.NioSendMsgConfig;
 
 public class UDPServer {
     public void receive() throws IOException {

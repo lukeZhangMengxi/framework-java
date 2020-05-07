@@ -1,4 +1,4 @@
-package java_nio;
+package nio_channel_buffer;
 
 public class NioSendMsgConfig {
     public static final int SEND_BUFFER_SIZE = 1024;

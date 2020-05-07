@@ -1,4 +1,4 @@
-package java_nio.copy_file_channel;
+package nio_channel_buffer.copy_file_channel;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -8,8 +8,8 @@ import java.nio.channels.FileChannel;
 
 class CopyFile {
     public static void main(String[] args) throws IOException {
-        String src = "java_nio/copy_file_channel/input.txt";
-        String dest = "java_nio/copy_file_channel/output.txt";
+        String src = "nio_channel_buffer/copy_file_channel/input.txt";
+        String dest = "nio_channel_buffer/copy_file_channel/output.txt";
 
         FileInputStream fis = new FileInputStream(src);
         FileOutputStream fos = new FileOutputStream(dest);

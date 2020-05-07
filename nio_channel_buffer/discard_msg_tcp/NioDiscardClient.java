@@ -1,11 +1,11 @@
-package java_nio.discard_msg_tcp;
+package nio_channel_buffer.discard_msg_tcp;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
-import java_nio.NioSendMsgConfig;
+import nio_channel_buffer.NioSendMsgConfig;
 
 public class NioDiscardClient {
     public void start() throws IOException {

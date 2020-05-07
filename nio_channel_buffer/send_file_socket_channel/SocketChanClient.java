@@ -1,4 +1,4 @@
-package java_nio.send_file_socket_channel;
+package nio_channel_buffer.send_file_socket_channel;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -13,7 +13,7 @@ public class SocketChanClient {
         SocketChannel clientChan = SocketChannel.open();
         clientChan.connect(new InetSocketAddress("localhost", 9000));
 
-        Path path = Paths.get("java_nio/send_file_socket_channel/client_sent.txt");
+        Path path = Paths.get("nio_channel_buffer/send_file_socket_channel/client_sent.txt");
         FileChannel fileChan = FileChannel.open(path);
         ByteBuffer buf = ByteBuffer.allocate(1024);
         while(fileChan.read(buf) > 0) {

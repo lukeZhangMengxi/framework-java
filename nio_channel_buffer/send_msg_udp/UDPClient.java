@@ -1,4 +1,4 @@
-package java_nio.send_msg_udp;
+package nio_channel_buffer.send_msg_udp;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -7,7 +7,7 @@ import java.nio.channels.DatagramChannel;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
-import java_nio.NioSendMsgConfig;
+import nio_channel_buffer.NioSendMsgConfig;
 
 public class UDPClient {
     public void send() throws IOException {

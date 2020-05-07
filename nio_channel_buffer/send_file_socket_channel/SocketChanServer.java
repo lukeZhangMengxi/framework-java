@@ -1,4 +1,4 @@
-package java_nio.send_file_socket_channel;
+package nio_channel_buffer.send_file_socket_channel;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -19,7 +19,7 @@ public class SocketChanServer {
         SocketChannel clientChan = serverChan.accept();
         System.out.println("Connection Set:  " + clientChan.getRemoteAddress());
 
-        Path path = Paths.get("java_nio/send_file_socket_channel/server_received.txt");
+        Path path = Paths.get("nio_channel_buffer/send_file_socket_channel/server_received.txt");
         FileChannel fileChan = FileChannel.open(path,
             EnumSet.of(StandardOpenOption.CREATE, 
             StandardOpenOption.TRUNCATE_EXISTING,
